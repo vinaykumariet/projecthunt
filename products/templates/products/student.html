@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<form method="POST" action="">
+
+    {% csrf_token %}
+
+    <div>
+
+        {{  form.as_p }}
+
+        <button type="submit">Submit</button>
+
+
+    </div>
+    <input type="hidden"/>
+
+</form>
+
+
+<div>
+
+    
+{%  for k in std  %}
+
+{{ k.name }}
+{{ k.email_id }}
+{{ k.contact_no }}
+
+
+
+
+{% endfor %}
+
+
+</div>
+
+{% endblock %}
