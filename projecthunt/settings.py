@@ -25,7 +25,7 @@ SECRET_KEY = 'ird*-is4xmo8uie=*f233z*3n#ufps=bp_q5vlt3l$$!tvsh&s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -146,3 +146,6 @@ AUTHENTICATION_BACKENDS = (
 
 SOCIAL_AUTH_GITHUB_KEY='3d1bcf2dab56a5ca3b81'
 SOCIAL_AUTH_GITHUB_SECRET='ff3694ac97522b6e496b9f2546ca4e56d78fb9fc'
+
+
+LOGIN_REDIRECT_URL = 'home'

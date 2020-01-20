@@ -7,6 +7,7 @@ from django.contrib import messages
 def signup(request):
     if request.method=='POST':
         form1=Userform(request.POST)
+		
         if form1.is_valid():
             username=form1.cleaned_data['username']
             firstname=form1.cleaned_data['first_name']
